@@ -1,7 +1,8 @@
 ## What is an incident in ServiceNow?
 
-- 
-Definition: An Incident is an unplanned interruption or reduction in the quality of service, i.e. something is broken or not working as expected. Incident Management covers the entire lifecycle of an incident from its detection until its resolution and closure.
+- Definition: An Incident is an unplanned interruption or reduction in the quality of service, i.e. something is broken or not working as expected. Incident Management covers the entire lifecycle of an incident from its detection until its resolution and closure.
+
+- Definition: En Incident är ett oplanerat avbrott eller minskning av kvaliteten på tjänsten, det vill säga något är trasigt eller inte fungerar som förväntat. Incident Management täcker hela livscykeln för en incident från dess upptäckt till dess att den löses och stängs.
 
 ## Några punkter att notera:
 
@@ -33,3 +34,11 @@ window.location.href används för att omdirigera webbläsaren till den angivna 
 URL-strängen ska peka på det exakta formuläret du vill öppna. I det här fallet antar jag att "incident" är namnet på din ServiceNow-tabel, och "/incident.do" är sökvägen till formuläret.
 Dubbelkolla att URL-strängen är korrekt och att det inte finns några överflödiga tecken, som de två snedstrecken innan "incident.do".
 Om du upplever problem med att använda sys_id=-1 för att skapa en ny post, överväg att använda action=insert som i koden. Detta bör skapa en ny post varje gång formuläret öppnas.
+
+***
+
+```bash
+// Ändra den aktuella sidans URL och omdirigera till en annan sida
+window.location.href = "https://www.example.com";
+
+```
