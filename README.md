@@ -27,3 +27,9 @@ En variabel url skapas och tilldelas en sträng. Detta är den URL som kommer at
 3. window.location.href = url;
 
 window.location.href används för att omdirigera webbläsaren till den angivna URL:en. I det här fallet är det formuläret för att skapa en ny incident.
+
+- Några punkter att notera:
+
+URL-strängen ska peka på det exakta formuläret du vill öppna. I det här fallet antar jag att "incident" är namnet på din ServiceNow-tabel, och "/incident.do" är sökvägen till formuläret.
+Dubbelkolla att URL-strängen är korrekt och att det inte finns några överflödiga tecken, som de två snedstrecken innan "incident.do".
+Om du upplever problem med att använda sys_id=-1 för att skapa en ny post, överväg att använda action=insert som i koden. Detta bör skapa en ny post varje gång formuläret öppnas.
